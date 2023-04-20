@@ -1,0 +1,19 @@
+@media  screen and (max-width: 992px) {
+    .nav-container li:hover a::after {
+        width: 5%;
+    }
+    .nav-container li .active::after {
+        width: 5%;
+    }
+}
+
+@media  screen and (max-width: 576px) {
+    .main-bg-1 {
+        background-image: url(../images/mobile-bg.jpg);
+    }
+    .main-bg-2 .about-txt {
+        padding-top: 2rem;
+    }
+}
+
+

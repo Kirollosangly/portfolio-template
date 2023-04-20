@@ -1,0 +1,507 @@
+/* *** *** Global CSS *** *** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* *** *** Navbar and Main Section *** *** */
+.main-bg-1 {
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 500px 1000px rgba(0, 0, 0, .6);
+}
+
+.nav-container {
+    transition: .4s ease;
+}
+
+.nav-container:hover {
+    background-color: white !important;
+}
+
+.nav-container a {
+    transition: .4s ease;
+}
+
+.nav-container:hover a {
+    color: black !important;
+}
+
+.nav-container li a {
+    transition: 1s ease;
+}
+
+.nav-container li .active::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 75%;
+    height: 2px;
+    background-color: black;
+    transition: 1s ease;
+}
+
+.nav-container li a::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 1s ease;
+}
+
+.nav-container li:hover a::after {
+    width: 75%;
+}
+
+/* *** *** Main Section *** *** */
+.main-bg-1 .mainSection-container .section-txt .dani::after {
+    content: "";
+    animation-name: text-animation;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text-animation {
+    3% {
+        content: "F";
+    }
+
+    6% {
+        content: "Fr";
+    }
+
+    9% {
+        content: "Fro";
+    }
+
+    12% {
+        content: "Fron";
+    }
+
+    15% {
+        content: "Front";
+    }
+
+    18% {
+        content: "Front E";
+    }
+
+    21% {
+        content: "Front En";
+    }
+
+    24% {
+        content: "Front End";
+    }
+
+    27% {
+        content: "Front End-D";
+    }
+
+    30% {
+        content: "Front End-De";
+    }
+
+    33% {
+        content: "Front End-Dev";
+    }
+
+    36% {
+        content: "Front End-Devo";
+    }
+
+    39% {
+        content: "Front End-Devol";
+    }
+
+    42% {
+        content: "Front End-Develo";
+    }
+
+    45% {
+        content: "Front End-Develop";
+    }
+
+    48% {
+        content: "Front End-Develope";
+    }
+
+    51% {
+        content: "Front End-Developer";
+    }
+
+    57% {
+        content: "Front End-Develope";
+    }
+
+    60% {
+        content: "Front End-Develop";
+    }
+
+    63% {
+        content: "Front End-Develo";
+    }
+
+    66% {
+        content: "Front End-Devol";
+    }
+
+    69% {
+        content: "Front End-Devo";
+    }
+
+    72% {
+        content: "Front End-Dev";
+    }
+
+    75% {
+        content: "Front End-De";
+    }
+
+    78% {
+        content: "Front End-D";
+    }
+
+    81% {
+        content: "Front End";
+    }
+
+    84% {
+        content: "Front En";
+    }
+
+    87% {
+        content: "Front E";
+    }
+
+    90% {
+        content: "Front";
+    }
+
+    93% {
+        content: "Fron";
+    }
+
+    96% {
+        content: "Fro";
+    }
+
+    99% {
+        content: "Fr";
+    }
+
+    100% {
+        content: "F";
+    }
+}
+
+.main-bg-1 .mainSection-container .icons-container i {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/* *** *** About Me Section *** *** */
+.main-bg-2 .about-img .section-img::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -30px;
+    width: 95%;
+    height: 95%;
+    z-index: -1;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+}
+
+.main-bg-2 .about-txt .progress-container .progress {
+    box-shadow: inset 0px .5px 5px .2px rgba(0, 0, 0, .2);
+}
+
+.main-bg-2 .about-txt .buttons-container .button1:hover {
+    background-color: white !important;
+    border: 1px solid black !important;
+    color: black !important;
+}
+
+.main-bg-2 .about-txt .buttons-container .button2 {
+    border: 1px solid black !important;
+}
+
+.main-bg-2 .about-txt .buttons-container .button2:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+/* *** *** Services Section *** *** */
+.main-bg-3 {
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.main-bg-3 .section-heading h2::after {
+    content: "";
+    width: 10rem;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+    position: absolute;
+    left: calc(50% - 5rem);
+    bottom: -12px;
+    z-index: -1;
+}
+
+.main-bg-3 .fa-solid {
+    width: 5rem;
+    height: 5rem;
+    padding: 1.2rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    align-self: center;
+    transition: .4s ease;
+    background-color: #f4f4f4;
+    ;
+}
+
+.main-bg-3 .crd-hvr:hover .fa-solid {
+    color: rgba(238, 238, 238, 0.8);
+    background-color: black;
+}
+
+/* *** *** Porfolio Section *** *** */
+.main-bg-4 {
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.main-bg-4 .section-heading h2::after {
+    content: "";
+    width: 10rem;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+    position: absolute;
+    left: calc(50% - 5rem);
+    bottom: -12px;
+    z-index: -1;
+}
+
+.main-bg-4 button {
+    width: fit-content !important;
+    padding: 0px !important;
+    padding-bottom: 4px !important;
+}
+
+.main-bg-4 .nav-item .active::after {
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 2s ease;
+}
+
+.main-bg-4 .layer {
+    background-color: rgba(255, 255, 255, .6);
+    border: 8px solid rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .6s ease;
+}
+
+.main-bg-4 .layer:hover {
+    opacity: 100%;
+}
+
+.main-bg-4 .crd-hvr p {
+    letter-spacing: 2.5px !important;
+}
+
+.main-bg-4 .crd-hvr i {
+    width: 2rem;
+    height: 2rem;
+    font-size: .8rem;
+    border-radius: 100%;
+    transition: .4s ease;
+}
+
+.main-bg-4 .crd-hvr i:hover {
+    color: black !important;
+    background-color: white !important;
+    border: 1px solid black !important;
+}
+
+/* *** *** carousel section *** *** */
+
+.main-bg-5 {
+    background-image: url(../images/clients/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 500px 1000px rgba(220, 220, 220, 0.4); 
+}
+
+.main-bg-5 .section-heading h2::after {
+    content: "";
+    width: 10rem;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+    position: absolute;
+    left: calc(50% - 5rem);
+    bottom: -12px;
+    z-index: -1;
+}
+
+.main-bg-5 .carousel-picture {
+    width: 8rem;
+}
+
+.main-bg-5 .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+}
+
+/* *** *** Counter Section *** *** */
+.main-bg-6 {
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 500px 1000px rgba(220, 220, 220, 0.4);
+}
+.main-bg-6 .fa-solid {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.main-bg-6 .b-none {
+    border: none !important;
+}
+
+/* *** *** Blog Section *** *** */
+.main-bg-7 {
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.main-bg-7 .section-heading h2::after {
+    content: "";
+    width: 10rem;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+    position: absolute;
+    left: calc(50% - 5rem);
+    bottom: -12px;
+    z-index: -1;
+}
+
+.main-bg-7 .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+}
+
+.main-bg-7 .carousel .crd-container img {
+    transition: 1s ease;
+}
+
+.main-bg-7 .carousel .crd-container:hover img {
+    transform: scale(1.2);
+}
+
+.main-bg-7 .carousel .row .crd-container .inner-crd {
+    box-shadow: 0px .2px 20px rgba(0, 0, 0, .08);
+}
+
+/* *** *** Contact Us Section *** *** */
+.main-bg-8 .section-heading h2::after {
+    content: "";
+    width: 10rem;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-position: center center;
+    position: absolute;
+    left: calc(50% - 5rem);
+    bottom: -12px;
+    z-index: -1;
+}
+
+.main-bg-8 .crd-container i {
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    font-size: 2rem;
+    align-self: center;
+    transition: .4s ease;
+    background-color: #f4f4f4;
+    ;
+}
+
+.main-bg-8 .crd-container:hover i {
+    color: #f4f4f4 !important;
+    background-color: black !important;
+}
+
+.main-bg-8 form input,
+.main-bg-8 form textarea {
+    border: .5px solid #eee;
+    background-color: #f4f4f4;
+    transition: .4s ease;
+}
+
+.main-bg-8 form input:focus-visible,
+.main-bg-8 form textarea:focus-visible {
+    outline: 0px;
+    background-color: white;
+}
+
+.main-bg-8 form .btn-container button:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+.cross-limit:focus {
+    border-color: #df4759 !important;
+    box-shadow: 0 0 0 0.05rem #df47596a !important;
+}
+
+/* *** *** Footer *** *** */
+.main-bg-9 {
+    background-color: #1c1c1c;
+}
+
+.main-bg-9 p {
+    color: #748182 !important;
+    font-size: 14px !important;
+}
+
+.button-up {
+    display: none;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.button-up span {
+    width: 48px;
+    height: 48px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    border: 01px solid black;
+}
